@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla&family=Markazi+Text:wght@600&display=swap");
+
+:root {
+  --font-base: "Markazi Text", serif;
+  --font-alt: "Karla", sans-serif;
+
+  --primary-color1: #495e57;
+  --primary-color2: #f4ce14;
+
+  --secondary-color1: #ee9972;
+  --secondary-color2: #fbdabb;
+  --secondary-color3: #edefee;
+  --secondary-color4: #333333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: 0.2s linear;
+  letter-spacing: 0.04em;
+}
+
+/* Header Section Style */
+.navbar {
+  background: url(./images/bg.png);
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+  font-size: 40pt;
+  letter-spacing: 0.04em;
+
+  color: var(--primary-color2);
+  font-family: var(--font-base);
+}
+
+.nav-link {
+  color: var(--primary-color2);
+  font-weight: bold;
+  font-family: var(--font-base);
+  letter-spacing: 0.04em;
+  font-size: 20pt;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: var(--secondary-color3);
+  border-radius: 0.5rem;
+}
+
+.navbar-toggler {
+  border: 1px solid var(--primary-color2);
+  letter-spacing: 0.04em;
+  color: var(--primary-color2);
+}
+
+/* Home Section Style */
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(./images/pozaHeader.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+section {
+  padding: 2rem 5%;
+}
+
+.home .content {
+  max-width: 60rem;
+}
+
+.home .content h3 {
+  font-family: var(--font-base);
+  color: var(--primary-color2);
+  font-weight: bolder;
+  font-size: 64pt;
+  letter-spacing: 0.04em;
+}
+.home .content h4 {
+  font-family: var(--font-base);
+  color: var(--secondary-color3);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 117px;
+  font-size: 50pt;
+}
+
+.home .content p {
+  font-family: var(--font-alt);
+  color: var(--secondary-color2);
+  font-weight: normal;
+  letter-spacing: 0.04em;
+  font-size: 18pt;
+}
+.custom__button {
+  background: var(--primary-color2);
+  color: var(--secondary-color4);
+  font-family: var(--font-base);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  font-size: 15pt;
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.btn:hover {
+  letter-spacing: 0.04em;
+  color: var(--secondary-color3);
+}
+
+/* Menu Section Styles */
+#menu {
+  padding: 5% 20%;
+  background: url("./images/pozaStarter.jpg");
+}
+
+#special-menu {
+  padding: 5%;
+  opacity: 0.75;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row; */
+}
+
+.special h1 {
+  font-family: var(--font-base);
+  color: var(--secondary-color3);
+  letter-spacing: 0.04em;
+  line-height: 117px;
+  font-size: 50pt;
+}
+.card__body {
+  border: 1px solid var(--secondary-color4);
+  border-radius: 5px;
+  margin: 0.5rem 1rem;
+  padding: 8px;
+}
+.card_img {
+  width: 100%;
+  height: 314px;
+  object-fit: cover;
+}
+.p-text {
+  font-family: var(--font-alt);
+  font-size: 18pt;
+  color: var(--secondary-color1);
+  line-height: 30px;
+  letter-spacing: 0.04em;
+}
+
+.order-btn {
+  text-align: end;
+}
+
+.card:hover {
+  border: 2px solid #1a120b;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  cursor: pointer;
+}
+
+/* Testimonial Section Style */
+#testimoniol {
+  padding: 5% 20%;
+  position: relative;
+  background: url("./images/bg.png");
+  letter-spacing: 0.04;
+}
+
+.carousel-item {
+  text-align: center;
+  padding: 0 15%;
+}
+
+#testimoniol .section_title {
+  color: var(--secondary-color3);
+  font-family: var(--font-base);
+  letter-spacing: 0.04em;
+  font-size: 40pt;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+#testimoniol p {
+  color: var(--secondary-color3);
+  font-family: var(--font-base);
+  letter-spacing: 0.04em;
+  font-size: 15pt;
+}
+
+.testimonial_text {
+  font-family: var(--font-alt);
+  font-size: 15pt;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  color: var(--secondary-color1);
+}
+
+.testimonial_image {
+  width: 35%;
+  border-radius: 80%;
+  margin: 20px;
+}
+
+.carousel_item {
+  padding: 7% 15%;
+}
+
+/* About Section Styles */
+#about {
+  padding: 10% 20%;
+  background: url("./images/pozaCondimente1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-image {
+  width: 75%;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.about-images .two {
+  position: relative;
+  left: 50px;
+  bottom: 110px;
+}
+
+.about-details h3 {
+  /* color: #ffba00; */
+  font-family: var(--font-base);
+  color: var(--primary-color2);
+  font-weight: bolder;
+  font-size: 64pt;
+  letter-spacing: 0.04em;
+}
+
+.about-details h4 {
+  font-family: var(--font-base);
+  color: var(--secondary-color3);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 117px;
+  font-size: 50pt;
+}
+
+.about-details p {
+  font-family: var(--font-alt);
+  color: var(--secondary-color2);
+  font-weight: normal;
+  letter-spacing: 0.04em;
+  font-size: 18pt;
+}
+
+/* Footer Section Styles */
+#footer {
+  padding: 2% 20%;
+  background-color: #080808;
+  font-family: var(--font-alt);
+  color: var(--secondary-color1);
+  letter-spacing: 0.04em;
+  font-size: 15pt;
+  cursor: pointer;
+}
+
+.footer-section {
+  text-align: center;
+}
+
+.footer-image {
+  width: 15%;
+  height: 15%;
+  margin-bottom: 1.5rem;
+}
+.register {
+  font-family: var(--font-base);
+  color: var(--secondary-color3);
+  font-size: 50pt;
+  font-weight: bolder;
+  letter-spacing: 0.04em;
+  padding: 8% 20%;
+}
+form {
+  font-family: var(--font-base);
+  color: var(--secondary-color3);
+  font-size: 15pt;
+  font-weight: bolder;
+  letter-spacing: 0.04em;
+  /* border: 1px solid black; */
+  padding: 8% 20%;
+}
+
+label,
+button {
+  margin-top: 2rem;
+}
+
+form h2,
+form p {
+  text-align: center;
+}
+
+.form-check-label {
+  margin-top: -1.5rem;
+  font-weight: lighter;
+}
+
+.register {
+  background: url("./images/pozaCondimente1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.signin {
+  background: url("./images/pozaFrigarui.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Reservation Styles */
+.reservation {
+  background: url("./images/pozaPaste.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: var(--font-base);
+  font-size: 20pt;
+  color: var(--primary-color2);
+  height: 100vh;
+}
+.reservation_title {
+  font-family: var(--font-base);
+  font-size: 50pt;
+  color: var(--secondary-color3);
+}
+
+/* .table-image img {
+  border-start-end-radius: 3rem;
+}
+.second-img {
+  position: relative;
+  left: 150px;
+  bottom: 150px;
+} */
+
+.table-form form {
+  padding: 3rem;
+  border: 2px solid var(--primary-color2);
+}
+
+/* media queries for tablet */
+@media (max-width: 991px) {
+  section {
+    padding: 2rem;
+  }
+  .home .content h3 {
+    font-family: var(--font-base);
+    color: var(--primary-color2);
+    font-weight: bolder;
+    font-size: 64pt;
+    letter-spacing: 0.04em;
+  }
+  .home .content p {
+    font-family: var(--font-alt);
+    color: var(--secondary-color2);
+    font-weight: normal;
+    letter-spacing: 0.04em;
+    font-size: 18pt;
+  }
+  #menu {
+    padding: 5% 10%;
+  }
+  .order-btn {
+    margin-bottom: 2px;
+  }
+  .special {
+    text-align: center;
+  }
+}
+
+/* media queries for mobile */
+@media (max-width: 480px) {
+  .home {
+    background-position: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .home .content h3 {
+    font-size: 2.5rem;
+  }
+  .home .content p {
+    font-size: 1rem;
+  }
+  .menu-item {
+    font-size: 0.8rem;
+  }
+  .card-details {
+    margin-top: 5px;
+  }
+  .first {
+    text-align: center;
+  }
+  .order-btn {
+    margin-bottom: 2px;
+  }
+}
